@@ -1,0 +1,56 @@
+1521091596279	Rename resource 'html.html'
+1521091736667	Rename resource 'loginCss.css'
+1521092365569	Move 1 resources to 'login'
+1521092380920	Move 1 resources to 'images'
+1521092871604	Delete element
+1521093698227	Delete element
+1521095827500	Rename package 'formbean'
+1521095843469	Rename package 'com.controller'
+1521096482233	Rename resource 'login.html'
+1521097112734	Move 'css' to 'register'
+1521097506215	Rename resource 'login.js'
+1521097521468	Rename resource 'login.css'
+1521098264289	Delete element
+1521098309662	Rename type 'UserFormBean'
+1521098388557	Delete element
+1521100614995	Rename type 'UserDao'
+1521100744802	Rename type 'user'
+1521100752395	Rename type 'admin'
+1521101031657	Delete element
+1521101099645	Extract interface 'UserDao'
+1521101112937	Move compilation unit
+1521101404143	Rename package 'com.servlce'
+1521106644103	Rename package 'exception'
+1521112664975	Delete element
+1521114791023	Extract interface 'AdminDao'
+1521114805101	Move compilation unit
+1521115832632	Delete elements
+1521115876764	Copy folders
+1521116649017	Copy elements
+1521116655391	Copy elements
+1521116690424	Move folder
+1521116694245	Copy file
+1521116709995	Delete elements
+1521116747550	Copy folder
+1521116815227	Delete element
+1521116864681	Move 'css' to 'body'
+1521116921619	Move 1 resources to 'login'
+1521116939277	Copy folder
+1521116956065	Copy folders
+1521116962871	Delete element
+1521118738289	Delete element
+1521120116023	Move 1 resources to 'jsp'
+1521120160169	Move 1 resources to 'admin'
+1521124499508	Copy folder
+1521124985953	Delete element
+1521193013744	Delete element
+1521193233282	Rename type 'SelectAllUserServlet'
+1521199778002	Move 1 resources to 'UserStore'
+1521248981404	Delete element
+1521249913545	Rename type 'DaoUser'
+1521250004573	Rename type 'DanUser'
+1521251971091	Rename type 'BanUserDao'
+1521256257384	Extract interface 'BanUserDao'
+1521256291550	Move compilation unit
+1521268733403	Delete element
+1521277859502	Copy folder

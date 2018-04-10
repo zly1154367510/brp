@@ -1,0 +1,18 @@
+1521340855557	Extract interface 'StoreDao'
+1521340866490	Move compilation unit
+1521357518796	Copy folder
+1521361458745	Copy folder
+1521361471610	Delete element
+1521361474844	Move 1 resources to 'body'
+1521361595422	Move 1 resources to 'store'
+1521379778154	Delete element
+1521441001773	Delete element
+1521447667827	Copy file
+1521447717977	Copy file
+1521510991753	Extract interface 'CarTypeDao'
+1521511094712	Move compilation unit
+1521513658162	Extract interface 'CarDao'
+1521516283891	Move compilation unit
+1521537341129	Extract interface 'CarImagesDao'
+1521537352420	Rename type 'CarImagesImpl'
+1521537361202	Move compilation unit

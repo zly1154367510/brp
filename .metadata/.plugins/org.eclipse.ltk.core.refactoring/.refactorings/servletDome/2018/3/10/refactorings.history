@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.zly.demo&apos; to &apos;ServletDemo1/src&apos;&#x0D;&#x0A;- Original project: &apos;servletDome&apos;&#x0D;&#x0A;- Destination element: &apos;ServletDemo1/src&apos;&#x0D;&#x0A;- Original element: &apos;servletDome/src/com.zly.demo&apos;" description="Copy package" destination="=ServletDemo1/src" element1="/src&lt;com.zly.demo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1520416431377" version="1.0"/>
+</session>

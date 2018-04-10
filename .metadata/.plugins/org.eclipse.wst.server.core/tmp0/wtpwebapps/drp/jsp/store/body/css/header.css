@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+*{
+	margin: auto;
+	padding: auto;
+	font-family: "黑体";
+}
+
+#header_left{
+	margin-left: 5%;
+	float: left;
+	}
+#header_right{
+	float:right;
+	margin-right: 5%;
+	}
+	
+
+
