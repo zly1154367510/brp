@@ -1,0 +1,65 @@
+package com.web.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.CarImagesDao;
+import com.dao.impl.CarImagesDaoImpl;
+import com.daomain.CarImages;
+import com.utils.WebUtils;
+
+/**
+ * Servlet implementation class StoreCarImagesUpload
+ */
+@WebServlet("/StoreCarImagesUpload")
+public class StoreCarImagesUpload extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public StoreCarImagesUpload() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String uploadPath = "D:/wamp/www/drpFileUpLoad/";
+		String images_url = WebUtils.uploadFile1(request, uploadPath);
+		String cId = request.getParameter("cId");
+		if (images_url != null) {
+			CarImages carImages = new CarImages();
+			carImages.setId(null);
+			carImages.setImages_url(uploadPath+"/"+images_url);
+			carImages.setD_id(null);
+			carImages.setC_id(cId);
+			//String c_id = (String) request.getSession().getAttribute("c_id");
+			//System.out.println(c_id);
+			CarImagesDao dao = new CarImagesDaoImpl();
+			if(dao.add(carImages)){
+				System.out.println("照片上传成功");
+			}else{
+				System.out.println("照片上传失败");
+			}
+		}
+		
+		
+	}
+
+}

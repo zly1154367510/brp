@@ -1,0 +1,71 @@
+package com.daomain;
+
+public class Car {
+	private String id;
+	private String brand;
+	private String name;
+	private String p_year;
+	private String mileage;
+	private String d_id;
+	private String s_id;
+	private String price;
+	private String is_sold_out;
+	
+	public String getIs_sold_out() {
+		return is_sold_out;
+	}
+	public void setIs_sold_out(String is_sold_out) {
+		this.is_sold_out = is_sold_out;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getP_year() {
+		return p_year;
+	}
+	public void setP_year(String p_year) {
+		this.p_year = p_year;
+	}
+	public String getMileage() {
+		return mileage;
+	}
+	public void setMileage(String mileage) {
+		this.mileage = mileage;
+	}
+	public String getD_id() {
+		return d_id;
+	}
+	public void setD_id(String d_id) {
+		this.d_id = d_id;
+	}
+	public String getS_id() {
+		return s_id;
+	}
+	public void setS_id(String s_id) {
+		this.s_id = s_id;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	
+	
+	
+}

@@ -1,0 +1,59 @@
+package com.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.dao.CarImagesDao;
+import com.daomain.CarImages;
+import com.utils.DaoUtils;
+import com.utils.DbConntent;
+
+public class CarImagesDaoImpl implements CarImagesDao {
+	
+	private static Connection connection = null;
+	static{
+		connection = DbConntent.getConnection("db_brp");
+	}
+	
+	public boolean add(CarImages carImages){
+		
+		String sql = "insert into car_images(id,d_id,images_url,c_id) values(null,?,?,?)";
+		PreparedStatement p;
+		try {
+			p = connection.prepareStatement(sql);
+			PreparedStatement p1 = DaoUtils.sqlStatementFill(p, carImages, 3, false);
+			System.out.println(p1);
+			int resultSet = p1.executeUpdate();
+			if (resultSet != 0) {
+				return true;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+
+	@Override
+	public List<CarImages> findAll(String c_id) {
+		// TODO Auto-generated method stub
+		String sql = "select * from car_images where c_id=?";
+		PreparedStatement p;
+		try {
+			p = connection.prepareStatement(sql);
+			p.setString(1, c_id);
+			ResultSet resultSet = p.executeQuery();
+			List<CarImages> list = DaoUtils.resultSetToDaoMain(resultSet, CarImages.class);
+			return list;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+}

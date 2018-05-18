@@ -52,6 +52,7 @@
 			<br>
 			<input type="text" name="price" id="emailInput">
 			<br>
+			<
 			<br>
 			<input type="submit" value="注册">
 			<input type="button" value="重置" id="reset">
